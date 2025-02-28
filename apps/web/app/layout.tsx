@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 
 import "@workspace/ui/globals.css"
 import { Providers } from "@/components/providers"
+import { Metadata } from "next"
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -12,6 +13,11 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata: Metadata = {
+  title: "Calendar",
+  description: "Scheduling platform that adapts to any business.",
+}
 
 export default function RootLayout({
   children,
