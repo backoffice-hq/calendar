@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { Button } from "./button.js";
 import {
   Dialog,
   DialogContent,
@@ -10,7 +9,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@workspace/ui/components/dialog";
+} from "@calendar/ui/components/dialog";
 import { Clock, MapPin, Globe, Calendar as CalendarIcon } from "lucide-react";
 import {
   Select,
@@ -18,11 +17,13 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@workspace/ui/components/select";
-import { Calendar } from "@workspace/ui/components/calendar";
-import { Label } from "@workspace/ui/components/label";
-import { Input } from "@workspace/ui/components/input";
-import { Textarea } from "@workspace/ui/components/textarea";
+} from "@calendar/ui/components/select";
+import { Calendar } from "@calendar/ui/components/calendar";
+import { Label } from "@calendar/ui/components/label";
+import { Input } from "@calendar/ui/components/input";
+import { Textarea } from "@calendar/ui/components/textarea";
+import { Button } from "@calendar/ui/components/button";
+
 type ScheduleDialogProps = {
   trigger: React.ReactNode;
   title: string;

@@ -1,5 +1,5 @@
-import { Button } from "@workspace/ui/components/button";
-import { ScheduleDialog } from "@workspace/ui/components/schedule-dialog";
+import { Button } from "@calendar/ui/components/button";
+import { ScheduleDialog } from "@calendar/ui/components/schedule-dialog";
 import Link from "next/link";
 
 export default function Page() {
